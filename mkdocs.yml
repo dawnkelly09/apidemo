@@ -1,0 +1,85 @@
+site_name: API Documentation Demo
+site_url:
+home_url:
+home_name:
+site_dir:
+docs_dir: docs-apidemo
+copyright: © Papermoon.io. All rights reserved.
+theme:
+  name: material
+  custom_dir: material-overrides
+  favicon:
+  logo:
+  font: 
+    text: DM Sans
+    code: Source Code Pro
+  features:
+    - content.code.copy
+    - navigation.footer
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - toc.follow
+extra_css:
+  - assets/stylesheets/terminal.css
+markdown_extensions:
+  - admonition
+  - attr_list
+  - codehilite
+  - md_in_html
+  - meta
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.snippets:
+      base_path: docs-apidemo/.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: ＃
+plugins:
+  - search
+  - awesome-pages
+  - macros:
+      include_yaml:
+        - docs-apidemo/variables.yml
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+validation:
+  absolute_links: ignore
+extra:
+  generator: !!bool false
+  social:
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/INSERT_USERNAME_HERE
+      name: X
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/INSERT_COMPANY_NAME_HERE/
+      name: LinkedIn
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/INSERT_USERNAME_HERE/
+      name: Instagram
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/profile.php?id=INSERT_ID_HERE
+      name: Facebook
+  analytics:
+    provider: google
+    property: G-XXX
+  # TODO: set up feedback
+  #   feedback:
+  #     title: Was this page helpful?
+  #     ratings:
+  #       - icon: material/emoticon-happy-outline
+  #         name: This page was helpful
+  #         data: 1
+  #         note: >-
+  #           Thanks for your feedback!
+  #       - icon: material/emoticon-sad-outline
+  #         name: This page could be improved
+  #         data: 0
+  #         note: >-
+  #           Thanks for your feedback! Help us improve this page by submitting
+  #           <a href="https://github.com/XXX/XXX/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">additional feedback</a>.
+
